@@ -1,0 +1,37 @@
+
+
+<!DOCTYPE HTML>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Check Out Page</title>
+<link rel="stylesheet" type="text/css" href="../static/css/bootstrap.css">
+<script type="text/javascript" src="../static/js/jquery.js"></script>
+<script type="text/javascript" src="../static/js/popper.js"></script>
+<script type="text/javascript" src="../static/js/bootstrap.js"></script>
+<style type="text/css">
+.carousel-inner img{height: 725px;width: 100%;}
+
+
+p{color: gold;}
+h3{color: green;}
+
+</style>
+</head>
+{% include "header.html" %}
+<h1 style="background-color: black; text-align: center; font-size: 40px; fantasy; height: 3%; color:light pink;">
+HAPPYLAND HOTEL<br><img src="../static/img/logo2.png"></h1>
+<p><body>
+<h3 class="alert alert-message">{{ msg }}</h3>
+<div class="container">
+<h3>Check Out</h3>
+<p>Search using the mobile number</p>
+<form method="post" action="/checkout" id="searchform" action="/checkout">
+<input type="number" name="number" placeholder="Visitor's mobile number">
+<input type="submit" name="delete" value="Checkout">
+</form>
+</div>
+
+
+</body>
+</html>
+</p>

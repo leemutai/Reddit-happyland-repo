@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="../static/bootstrap.css" text="text/css">
+</head>
+<body>
+{% include "header.html" %}
+<div class="container">
+    <h1 class="jumbotron">Login Page</h1>
+    <h3 class="text-warning"> {{error_msg }}</h3>
+    <h3 class="text-success">{{ success_msg }}</h3>
+    <h3 class="text-danger">{{ error }}</h3>
+
+<form action="/login" method="post">
+    <label>Username</label>
+    <input type="text" name="username" placeholder="Enter Username" class="form-control">
+    <label>Password</label>
+    <input type="password" name="password" placeholder="Enter password" class="form-control">
+    <input type="submit" name="value" value="Login" class="btn btn-success">
+</form>
+</div>
+</body>
+</html>

@@ -1,0 +1,33 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>View</title>
+<link rel="stylesheet" href='../static/css/bootstrap.css' type="text/css" >
+</head>
+<body>
+{% include "header.html" %}
+<div class="container-fluid">
+<h4 class="text-danger">{{ msg}}</h4>
+
+
+
+{% for row in rows %}
+<b>Full Name</b> {{ row[0] }}<br>
+<b>Email</b> {{ row[1] }}<br>
+<b>Mobile Number</b> {{ row[2] }}<br>
+<b>Nationality</b> {{ row[3] }}<br>
+<b>Address</b> {{ row[4]}}<br>
+<b>Check In Date</b> {{ row[5]}}<br>
+<b>Check In Time</b> {{ row[6]}}<br>
+<b>Room Number</b> {{ row[7]}}<br>
+<b>Check Out Date</b> {{ row[8]}}<br>
+<b>Check Out Time</b> {{ row[9]}}<br><br>
+{% endfor %}
+
+
+</div>
+</body>
+</html>

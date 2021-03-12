@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Checkin Page</title>
+    <link rel="stylesheet" href="../static/css/bootstrap.css" type="text/css">
+</head>
+<body>
+{% include "header.html" %}
+<div class="container">
+<h3 class="alert alert-message">Message: {{ msg }}</h3>
+    <h1 class="jumbotron">Checkin Page</h1>
+    <form action="/checkin" method="post">
+        <label> FullNames</label>
+        <input type="text" name="fullname" placeholder="Enter your fullnames" class="form-control">
+        <br>
+        <label> Email_Address</label>
+        <input type="email" name="email" placeholder="Enter your email" class="form-control">
+        <br>
+        <label> Phone_Number</label>
+        <input type="tel" name="phone" placeholder="Enter Phone" class="form-control">
+        <br>
+        <label> Nationality</label>
+        <input type="text" name="nationality" class="form-control">
+        <br>
+        <label> Adrress</label>
+        <input type="text" name="address" placeholder="Enter Your Address" class="form-control">
+        <label>Checkin_Date</label>
+        <input type="date" name="date" class="form-control">
+        <label>Checkin_Time</label>
+        <input type="time" name="time" class="form-control">
+        <label>Room_No</label>
+        <input type="number" name="room" class="form-control">
+        <label>Checkout_Date</label>
+        <input type="date" name="checkoutdate" class="form-control">
+        <label>Checkout_Time</label>
+        <input type="time" name="checkouttime" class="form-control">
+        </select>
+        <br>
+        <input type="submit" name="value" value="Checkin" class="btn btn-success"><br><br><br>
+
+        <p>Incase it is your first time to visit our hotel, click the button below</p>
+        <input type="submit" name="value" value="Book now" class="btn btn-success">
+    </form>
+    <br><br>
+
+</div>
+</body>
+</html>
